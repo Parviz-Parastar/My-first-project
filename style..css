@@ -1,0 +1,174 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+@font-face {
+    font-family: "Yekan";
+    src: url(fonts/Yekan1.woff) format('.woff');
+}
+
+body {
+    background-color: #fcfcfc;
+    font-family: "Yekan"," SF Pro Text", "SF Pro Icons","Helvetica Neue",Helvetica,Arial,'Lato', sans-serif;
+    text-decoration: none;
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+nav {
+    background-color: #fbfbfd;;
+    padding: .2rem .5rem;
+    display: flex;
+    flex-direction: column;
+    color: #f5f5f7;
+    transition: background .4s ease-in;
+    border-bottom: 1px solid #ddd;
+    background-color: hsla(0, 0%, 0%, 0.04);
+    background-color: #fbfbfd;
+}
+
+.navSticky{
+    position: sticky;
+    top: 0;
+    background-color: #ddd;
+}
+
+.navTop{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.navTopItem{
+    margin-right: 5rem;
+}
+
+.logoImage{
+    width: 15rem;
+    padding: .5rem;
+}
+
+.search{
+    position: absolute;
+    right: 25%;
+    top: 1rem;
+}
+
+.searchInput{
+    padding: .6rem;
+    border: none;
+    width: 25vw;
+    border-radius: .4rem;
+    background-color: #eeeeee;
+}
+
+.searchImg{
+    position: absolute;
+    top: .45rem;
+    right: .35rem;
+}
+
+.orderIcon{
+    position: absolute;
+    right: 4rem;
+    top: .875rem;
+    padding: 0.6rem;
+    transition: height 0.4s;
+}
+
+.navIcon{
+    padding: 0.5rem;
+    color: #4f9eaf;
+    font-size: 1rem;
+    border: 1px solid #2222;
+    border-radius: .3rem;
+    transition: height 0.4s;
+}
+
+.memberShip{
+    position: absolute;
+    right: 8rem;
+    top: .875rem;
+    padding: 0.5rem;
+}
+
+.memberShipItem{
+    margin-right: .2rem;
+    margin-left: .2rem;
+    font-weight: 400;
+    font-size: 0.875rem;
+}
+
+.topMenu{
+    margin: -.5rem 0 0 0;
+}
+
+.topMenuStaky{
+    padding: 0.3rem;
+}
+
+.topMenuList{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tppMenuListItem{
+    margin-left: 2rem;
+    font-size: .75rem;
+    font-weight: 400;
+    top: 0;
+}
+
+.tppMenuListItem:hover{
+    color: #000000;
+}
+
+.moveTopMenuPosition{
+    position: absolute;
+    top: 2.4rem;
+    right: 21.5rem;
+    transition: all 1s ;
+}
+
+.sliderWrapper{
+    background: linear-gradient(to left top , #031A9A, #8b53FF);
+}
+
+.sliderWrapper .sliderProducts{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% /3) -12px);
+}
+
+.sliderItem{
+    background-color: #ffff;
+    list-style: none;
+    border-radius: .5rem;
+    height: 340px;
+}
+
+.sliderItem .img img{
+    width: 280px;
+    height: 280px;
+    object-fit: contain;
+}
+
